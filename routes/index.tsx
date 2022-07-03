@@ -50,7 +50,7 @@ export default function Home() {
           Jete, PT Doran Sukses Indonesia
         </a>{" "}
         company, building{" "}
-        <a href="https://jebusiness.com" class={linkClass}>
+        <a href="https://jebusiness.id" class={linkClass}>
           Jebusiness
         </a>{" "}
         and{" "}
