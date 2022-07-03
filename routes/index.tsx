@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <div class={tw`flex flex(col sm:row) gap-8`}>
         <img
-          src="/me.png"
+          src="/me.webp"
           alt="zaki mubarok"
           width="500"
           height="500"
