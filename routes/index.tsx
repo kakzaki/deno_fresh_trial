@@ -54,7 +54,7 @@ export default function Home() {
         and{" "}
         <a href="https://jeclock.com" class={linkClass}>
           Jeclock
-        </a>. I built{" "}
+        </a> and many other products. I built{" "}
         <a href="https://github.com/kakzaki/blue_thermal_printer" class={linkClass}>
           Blue Thermal Printer
         </a>
