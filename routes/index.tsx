@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </div>
       <div class={tw`mt-10 leading-7 text(gray-900 lg)`}>
-        I'm a developer and{" "}
+        I'm a Senior Flutter Develper, @dorandev core team and{" "}
         <a href="https://github.com/kakzaki" class={linkClass}>
           open source enthusiast
         </a>
