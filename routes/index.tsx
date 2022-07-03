@@ -17,13 +17,13 @@ export default function Home() {
         <title>Home - Zaki Mubarok</title>
         <meta
           name="description"
-          content="Senior Flutter Develper. @dorandev core team. he/him 🌍🌻💚"
+          content="Senior Flutter Developer. @dorandev core team. he/him 🌍🌻💚"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <div class={tw`flex flex(col sm:row) gap-8`}>
         <img
-          src="/me.jpeg"
+          src="/me.png"
           alt="zaki mubarok"
           width="500"
           height="500"
@@ -39,7 +39,9 @@ export default function Home() {
         </div>
       </div>
       <div class={tw`mt-10 leading-7 text(gray-900 lg)`}>
-        I'm a Senior Flutter Develper, @dorandev core team and{" "}
+        I'm a Senior Flutter Developer,{" "}<a href="https://dorandev.com" class={linkClass}>
+          DoranDev
+        </a>{" "} core team and{" "}
         <a href="https://github.com/kakzaki" class={linkClass}>
           open source enthusiast
         </a>
