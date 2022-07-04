@@ -1,15 +1,19 @@
 {
-    "deno.enable": true,
-    "deno.lint": true,
-    "deno.unstable": true,
-    "deno.suggest.imports.hosts": {
-      "https://deno.land": true,
-      "https://x.nest.land": true,
-      "https://crux.land": true,
-      "https://x.lcas.dev": true,
-      "https://cdn.skypack.dev": false,
-      "https://esm.sh": false,
-      "https://raw.githubusercontent.com": false
-    }
-  }
-  
+  "deno.enable": true,
+  "deno.lint": true,
+  "deno.unstable": true,
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true,
+    "https://x.nest.land": true,
+    "https://crux.land": true,
+    "https://x.lcas.dev": true,
+    "https://cdn.skypack.dev": false,
+    "https://esm.sh": false,
+    "https://raw.githubusercontent.com": false
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
+}
