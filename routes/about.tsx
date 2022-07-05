@@ -11,3 +11,12 @@ export default function AboutPage() {
     </main>
   );
 }
+
+//make html template to be used in the about page with taildwind styling
+// Language: html
+// Path: routes\about.html
+
+
+
+
+
