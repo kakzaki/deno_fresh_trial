@@ -14,7 +14,7 @@ export default function Home() {
         <title>Home - Zaki Mubarok</title>
         <meta
           name="description"
-          content="Senior Flutter Developer. @dorandev core team. he/him 🌍🌻💚"
+          content="Senior Flutter Developer. @dorandev core team. 🌍"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       </div>
       <div class={tw`mt-10 leading-7 text(gray-900 lg)`}>
-        I'm a Senior Flutter Developer,{" "}
+        I'm a Senior Flutter Developer 🌍,{" "}
         <a href="https://dorandev.com" class={linkClass}>
           DoranDev
         </a>{" "}
