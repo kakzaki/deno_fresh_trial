@@ -82,7 +82,7 @@ export default function Home() {
       </div>
       <div class={tw`mt-10 leading-7 text(lg gray-900)`}>
         <a href="https://kakzaki.my.id" class={linkClass}>
-          My resume
+          My Resume
         </a>{" "}
       </div>
       <SocialLinks class="mt-10" />
