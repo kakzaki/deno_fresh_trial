@@ -25,7 +25,7 @@ export default function LandingPage() {
         <style></style>
       </head>
       <body
-        class="leading-normal tracking-normal text-white gradient-to-r from-gray-100 via-white-100 to-gray-100"
+        class="leading-normal tracking-normal text-white gradient-to-r from-blue-500 via-blue-700 to-blue-900"
         style="font-family: 'Source Sans Pro', sans-serif;"
       >
         <nav id="header" class="fixed w-full z-30 top-0 text-white">
