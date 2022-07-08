@@ -16,5 +16,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "tailwindCSS.emmetCompletions": true
+  "twind.enable": true
 }
