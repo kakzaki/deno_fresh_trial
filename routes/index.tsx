@@ -9,7 +9,7 @@ export default function Home() {
   const linkClass = tw`text-blue(600 hover:500) hover:underline transition duration-75 ease-in-out`;
 
   return (
-    <div class={tw`mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}>
+    <div class={tw`-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}>
       <Head>
         <title>Home - Zaki Mubarok</title>
         <meta
