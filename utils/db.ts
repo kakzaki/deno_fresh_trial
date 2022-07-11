@@ -1,13 +1,13 @@
-import { SqliteDriver } from "./sqlite_driver.ts";
+import { MysqlDriver } from "./mysql_driver.ts";
 
 import {
   ColumnType,
   Generated,
   Kysely,
   Selectable,
-  SqliteAdapter,
-  SqliteIntrospector,
-  SqliteQueryCompiler,
+  MysqlAdapter,
+  MysqlIntrospector,
+  MysqlQueryCompiler,
 } from "kysely";
 
 interface PersonTable {
@@ -42,16 +42,16 @@ export class Db {
     return new Kysely<DbSchema>({
       dialect: {
         createAdapter() {
-          return new SqliteAdapter();
+          return new MysqlAdapter();
         },
         createDriver() {
-          return new SqliteDriver("./data/test.db");
+          return new MysqlDriver();
         },
         createIntrospector(db: Kysely<unknown>) {
-          return new SqliteIntrospector(db);
+          return new MysqlIntrospector(db);
         },
         createQueryCompiler() {
-          return new SqliteQueryCompiler();
+          return new MysqlQueryCompiler();
         },
       },
     });

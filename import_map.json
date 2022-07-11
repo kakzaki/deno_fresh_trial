@@ -8,6 +8,7 @@
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
     "kysely": "https://esm.sh/kysely@0.19.6",
-    "sqlite": "https://deno.land/x/sqlite@v3.4.0/mod.ts"
+    "sqlite": "https://deno.land/x/sqlite@v3.4.0/mod.ts",
+    "mysql": "https://deno.land/x/mysql@v2.10.2/mod.ts"
   }
 }

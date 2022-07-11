@@ -1,0 +1,87 @@
+import { Client } from "mysql";
+import { CompiledQuery, DatabaseConnection, Driver, QueryResult } from "kysely";
+
+export class MysqlDriver implements Driver {
+  readonly #connectionMutex = new ConnectionMutex();
+
+  #db?: Client;
+  #connection?: DatabaseConnection;
+
+  async init(): Promise<void> {
+    this.#db = await new Client().connect({
+      hostname: "2pyvszw7jnww.ap-southeast-2.psdb.cloud",
+      username: "8wvn7m6iyfbc",
+      db: "coba",
+      password:
+        "Password:pscale_pw_tWqVQaVCwzVnZTm_KgZgPMT-Yooetk0mwHwq_hkpS5w",
+    
+    });
+    this.#connection = new MysqlConnection(this.#db);
+    return Promise.resolve();
+  }
+
+  async acquireConnection(): Promise<DatabaseConnection> {
+    await this.#connectionMutex.lock();
+    return this.#connection!;
+  }
+
+  async beginTransaction(connection: DatabaseConnection): Promise<void> {
+    await connection.executeQuery(CompiledQuery.raw("begin"));
+  }
+
+  async commitTransaction(connection: DatabaseConnection): Promise<void> {
+    await connection.executeQuery(CompiledQuery.raw("commit"));
+  }
+
+  async rollbackTransaction(connection: DatabaseConnection): Promise<void> {
+    await connection.executeQuery(CompiledQuery.raw("rollback"));
+  }
+
+  releaseConnection(): Promise<void> {
+    this.#connectionMutex.unlock();
+    return Promise.resolve();
+  }
+
+  destroy(): Promise<void> {
+    this.#db?.close();
+    return Promise.resolve();
+  }
+}
+
+class MysqlConnection implements DatabaseConnection {
+  readonly #db: Client;
+
+  constructor(db: Client) {
+    this.#db = db;
+  }
+
+  executeQuery<O>(compiledQuery: CompiledQuery): Promise<QueryResult<O>> {
+    const { sql } = compiledQuery;
+    const stmt = this.#db.query(sql);
+    return Promise.resolve(stmt);
+  }
+}
+
+class ConnectionMutex {
+  #promise?: Promise<void>;
+  #resolve?: () => void;
+
+  async lock(): Promise<void> {
+    while (this.#promise) {
+      await this.#promise;
+    }
+
+    this.#promise = new Promise((resolve) => {
+      this.#resolve = resolve;
+    });
+  }
+
+  unlock(): void {
+    const resolve = this.#resolve;
+
+    this.#promise = undefined;
+    this.#resolve = undefined;
+
+    resolve?.();
+  }
+}

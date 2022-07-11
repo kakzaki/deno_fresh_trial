@@ -17,14 +17,14 @@ async function up(db: Kysely<DbSchema>): Promise<void> {
   await db
     .insertInto("person")
     .values({
-      first_name: "Jennifer",
+      first_name: "Laila",
       gender: "female",
     })
     .execute();
 
   await db
     .insertInto("person")
-    .values({ first_name: "John", gender: "male" })
+    .values({ first_name: "Zaki", gender: "male" })
     .execute();
 }
 
