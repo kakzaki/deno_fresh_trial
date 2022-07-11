@@ -9,12 +9,10 @@ export class MysqlDriver implements Driver {
 
   async init(): Promise<void> {
     this.#db = await new Client().connect({
-      hostname: "2pyvszw7jnww.ap-southeast-2.psdb.cloud",
-      username: "8wvn7m6iyfbc",
-      db: "coba",
-      password:
-        "Password:pscale_pw_tWqVQaVCwzVnZTm_KgZgPMT-Yooetk0mwHwq_hkpS5w",
-    
+      hostname: Deno.env.get("host"),
+      username: Deno.env.get("user"),
+      db: Deno.env.get("db"),
+      password: Deno.env.get("password"),
     });
     this.#connection = new MysqlConnection(this.#db);
     return Promise.resolve();
