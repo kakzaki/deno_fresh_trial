@@ -22,6 +22,5 @@ export async function loadPost(
     publishDate: new Date(data.publish_date),
     markdown: content,
   };
-  console.log("Load: ", post.pathname);
   return [pathname, post];
 }
