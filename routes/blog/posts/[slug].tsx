@@ -8,7 +8,7 @@ import { loadPost } from "../../../utils/loadPost.ts";
 import Markdown from "markdown-to-jsx";
 import { Head } from "$fresh/runtime.ts";
 
-const POSTS_DIRECTORY = "blog/posts/";
+const POSTS_DIRECTORY = "article/";
 
 export const handler: Handlers<Post | null> = {
   async GET(_, ctx) {
@@ -53,7 +53,7 @@ export default function PostPage({ data, ...props }: PageProps<Post | null>) {
             name="description"
             content="Senior Flutter Developer. @dorandev core team. 🌍"
           />
-          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
         <span class={tw`text(3xl md:4xl) font-bold`}>{data.title}</span>
         <p class={tw`text-gray-500 pt-2 pb-10`}>
