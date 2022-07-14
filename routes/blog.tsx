@@ -21,8 +21,6 @@ export const handler: Handlers<null> = {
 export default function BlogPage({ data, ...props }: PageProps<null>) {
   return (
     <div class={tw`mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}>
-      <SocialLinks class={tw`mt(5 md:7)`} />
-      <hr class={tw`w-5/6 mx-auto my-10`} />
       <Posts posts={POSTS} />
     </div>
   );

@@ -83,6 +83,10 @@ export default function Home() {
         <a href="https://kakzaki.my.id" class={linkClass}>
           My Resume
         </a>{" "}
+        ||{" "}
+        <a href="/blog" class={linkClass}>
+          My Blog
+        </a>
       </div>
       <SocialLinks class="mt-10" />
     </div>
