@@ -2,7 +2,6 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import { Head } from "$fresh/runtime.ts";
-
 import { SocialLinks } from "../components/SocialLinks.tsx";
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
   return (
     <div class={tw`-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}>
       <Head>
-        <title>Home - Zaki Mubarok</title>
+        <title>Zaki Mubarok</title>
         <meta
           name="description"
           content="Senior Flutter Developer. @dorandev core team. 🌍"

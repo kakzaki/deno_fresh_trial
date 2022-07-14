@@ -1,7 +1,14 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import { GitHubIcon, IconLink, TwitterIcon } from "./Icons.tsx";
+import {
+  GitHubIcon,
+  IconLink,
+  TwitterIcon,
+  LinkedinIcon,
+  TelegramIcon,
+  InstagramIcon,
+} from "./Icons.tsx";
 
 export function SocialLinks(props: { class?: string; tight?: boolean }) {
   return (
@@ -15,6 +22,21 @@ export function SocialLinks(props: { class?: string; tight?: boolean }) {
         href="https://twitter.com/kakzaki_id"
         title="Twitter"
         icon={TwitterIcon}
+      />
+      <IconLink
+        href="https://id.linkedin.com/public-profile/in/zaki-mubarok-825634120"
+        title="Linkedin"
+        icon={LinkedinIcon}
+      />
+      <IconLink
+        href="https://t.me/kakzaki"
+        title="Telegram"
+        icon={TelegramIcon}
+      />
+      <IconLink
+        href="https://www.instagram.com/kakzaki/"
+        title="Instagram"
+        icon={InstagramIcon}
       />
     </div>
   );

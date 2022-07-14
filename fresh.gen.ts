@@ -5,11 +5,13 @@
 import * as $0 from "./routes/about.tsx";
 import * as $1 from "./routes/api/joke.ts";
 import * as $2 from "./routes/api/person.ts";
-import * as $3 from "./routes/greet/[name].tsx";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/landing.tsx";
-import * as $6 from "./routes/mysql.tsx";
-import * as $7 from "./routes/sqlite.tsx";
+import * as $3 from "./routes/blog.tsx";
+import * as $4 from "./routes/blog/posts/[slug].tsx";
+import * as $5 from "./routes/greet/[name].tsx";
+import * as $6 from "./routes/index.tsx";
+import * as $7 from "./routes/landing.tsx";
+import * as $8 from "./routes/mysql.tsx";
+import * as $9 from "./routes/sqlite.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
@@ -17,11 +19,13 @@ const manifest = {
     "./routes/about.tsx": $0,
     "./routes/api/joke.ts": $1,
     "./routes/api/person.ts": $2,
-    "./routes/greet/[name].tsx": $3,
-    "./routes/index.tsx": $4,
-    "./routes/landing.tsx": $5,
-    "./routes/mysql.tsx": $6,
-    "./routes/sqlite.tsx": $7,
+    "./routes/blog.tsx": $3,
+    "./routes/blog/posts/[slug].tsx": $4,
+    "./routes/greet/[name].tsx": $5,
+    "./routes/index.tsx": $6,
+    "./routes/landing.tsx": $7,
+    "./routes/mysql.tsx": $8,
+    "./routes/sqlite.tsx": $9,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
