@@ -31,20 +31,21 @@ export default function BlogPage({ data, ...props }: PageProps<null>) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <div
-        class={tw`bg-white font-semibold text-center rounded-md max-w-xs border shadow-xs p-6`}
+        // class={tw`bg-white font-semibold text-center rounded-md max-w-xs border shadow-xs p-6 `}
+        class={tw`bg-white text-start rounded-md max-w-xs `}
       >
         <img
-          class={tw`mb-3 w-32 h-32 rounded-full mx-auto shadow-sm`}
+          class={tw`w(24 md:32) h(24 md:32) rounded-full`}
           src="/me.webp"
-          alt="A Passionate Flutter developer"
+          width="500"
+          height="500"
+          alt="A Passionate Flutter developer Surabaya, Indonesia"
         />
-        <h1 class={tw`text-lg text-gray-700`}>Zaki Mubarok</h1>
-        <h3 class={tw`text-sm text-gray-400`}>
-          A Passionate Flutter developer
+        <h1 class={tw`text-lg text-gray-700 mt-4 font-bold`}>Zaki Mubarok</h1>
+        <h3 class={tw`text-sm text-gray-500`}>
+          A Passionate Flutter Developer
         </h3>
-        <p class={tw`text-xs text-gray-400 mt-4`}>
-          Hardworker, Charismatic, Reliable
-        </p>
+        <p class={tw`text-xs text-gray-400 mt-1`}>Surabaya, Indonesia.</p>
       </div>
       <div class={tw`m-6`}></div>
       <Posts posts={POSTS} />
