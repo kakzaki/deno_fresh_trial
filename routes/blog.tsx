@@ -26,10 +26,27 @@ export default function BlogPage({ data, ...props }: PageProps<null>) {
         <title>Zaki Mubarok's Blog</title>
         <meta
           name="description"
-          content="Senior Flutter Developer. @dorandev core team. 🌍"
+          content="Senior Flutter Developer. Surabaya, Indonesia. 🌍"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
+      <div
+        class={tw`bg-white font-semibold text-center rounded-md max-w-xs border shadow-xs p-6`}
+      >
+        <img
+          class={tw`mb-3 w-32 h-32 rounded-full mx-auto shadow-sm`}
+          src="/me.webp"
+          alt="A Passionate Flutter developer"
+        />
+        <h1 class={tw`text-lg text-gray-700`}>Zaki Mubarok</h1>
+        <h3 class={tw`text-sm text-gray-400`}>
+          A Passionate Flutter developer
+        </h3>
+        <p class={tw`text-xs text-gray-400 mt-4`}>
+          Hardworker, Charismatic, Reliable
+        </p>
+      </div>
+      <div class={tw`m-6`}></div>
       <Posts posts={POSTS} />
     </div>
   );
