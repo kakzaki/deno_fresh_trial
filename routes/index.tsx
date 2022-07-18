@@ -25,7 +25,7 @@ export default function Home() {
       <div class={tw`flex flex(col sm:row) gap-8`}>
         <img
           src="/me.webp"
-          alt="zaki mubarok"
+          alt="Zaki Mubarok, Senior Flutter Developer Surabaya, Indonesia"
           width="500"
           height="500"
           class={tw`w(24 md:32) h(24 md:32) rounded-full`}
