@@ -15,6 +15,11 @@ export default function Home() {
           name="description"
           content="Senior Flutter Developer. @dorandev core team. 🌍"
         />
+        <meta property="og:title" content="Zaki Mubarok"/>
+        <meta property="og:description" content="Senior Flutter Developer. @dorandev core team. 🌍" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kakzaki.deno.dev" />
+        <meta property="og:image" content="/me.webp" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <div class={tw`flex flex(col sm:row) gap-8`}>
