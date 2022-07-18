@@ -3,6 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 import { Head } from "$fresh/runtime.ts";
 import { SocialLinks } from "../components/SocialLinks.tsx";
+import { Footer } from "../components/Footer.tsx";
 
 export default function Home() {
   const linkClass = tw`text-blue(600 hover:500) hover:underline transition duration-75 ease-in-out`;
@@ -15,8 +16,11 @@ export default function Home() {
           name="description"
           content="Senior Flutter Developer. @dorandev core team. 🌍"
         />
-        <meta property="og:title" content="Zaki Mubarok"/>
-        <meta property="og:description" content="Senior Flutter Developer. @dorandev core team. 🌍" />
+        <meta property="og:title" content="Zaki Mubarok" />
+        <meta
+          property="og:description"
+          content="Senior Flutter Developer. @dorandev core team. 🌍"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kakzaki.deno.dev" />
         <meta property="og:image" content="/me.webp" />
@@ -94,6 +98,7 @@ export default function Home() {
         </a>
       </div>
       <SocialLinks class="mt-10" />
+      <Footer />
     </div>
   );
 }
