@@ -64,6 +64,7 @@ export default function PostPage({ data, ...props }: PageProps<Post | null>) {
           <Markdown className={tw`space-y-7 py-2`}>{data.markdown}</Markdown>
         </div>
       </div>
+      <div class="flex-grow"></div>
       <Footer />
     </div>
   );

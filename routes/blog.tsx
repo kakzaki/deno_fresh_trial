@@ -52,6 +52,7 @@ export default function BlogPage({ data, ...props }: PageProps<null>) {
         <div class={tw`m-6`}></div>
         <Posts posts={POSTS} />
       </div>
+      <div class="flex-grow"></div>
       <Footer />
     </div>
   );
