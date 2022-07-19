@@ -24,7 +24,7 @@ export function SocialLinks(props: { class?: string; tight?: boolean }) {
         icon={TwitterIcon}
       />
       <IconLink
-        href="https://id.linkedin.com/public-profile/in/zaki-mubarok-825634120"
+        href="https://id.linkedin.com/in/kakzaki"
         title="Linkedin"
         icon={LinkedinIcon}
       />
