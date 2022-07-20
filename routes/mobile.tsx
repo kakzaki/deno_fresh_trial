@@ -6,7 +6,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
 import LemonDrop from "../islands/LemonDrop.tsx";
 import { Footer } from "../components/Footer.tsx";
-import { Leaf } from "../components/Icons.tsx";
+import { Check } from "../components/Icons.tsx";
 
 export const handler: Handlers = {
   GET(req, ctx) {
@@ -78,7 +78,7 @@ export interface ListItemProps {
 function ListItem(props: ListItemProps) {
   return (
     <div class={tw`flex mt-3`}>
-      <Leaf />
+      <Check />
       <div class={tw`pl-4 flex-1`}>{props.children}</div>
     </div>
   );
