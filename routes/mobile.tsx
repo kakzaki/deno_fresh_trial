@@ -146,12 +146,13 @@ function GettingStarted(props: { origin: string }) {
       class={tw`max-w-screen-sm mx-auto my-16 px(4 sm:6 md:8) space-y-4`}
     >
       <h2
-        id="getting-started"
-        class={tw`w-full flex justify-center items-center flex-col bg-green-300`}
+        class={tw`py-4 text(4xl sm:4xl lg:4xl gray-900 center) sm:tracking-tight font-extrabold`}
       >
         Hubungi kami sekarang
       </h2>
-      <div class={tw`max-w-screen-sm mx-auto flex items-center`}>
+      <div
+        class={tw`py-4 text(4xl sm:4xl lg:4xl gray-900 center) sm:tracking-tight`}
+      >
         <a
           href="https://wa.me/6285704703691"
           class={tw`border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-green-300 rounded hover:bg-green-600`}
