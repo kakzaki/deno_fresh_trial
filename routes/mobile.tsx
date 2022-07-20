@@ -4,7 +4,6 @@ import { ComponentChildren, Fragment, h } from "preact";
 import { asset, Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { tw } from "@twind";
-import Counter from "../islands/Counter.tsx";
 import LemonDrop from "../islands/LemonDrop.tsx";
 import { Footer } from "../components/Footer.tsx";
 import { Leaf } from "../components/Icons.tsx";
@@ -27,7 +26,7 @@ const TITLE = "Agensi aplikasi android dan ios Surabaya";
 const DESCRIPTION =
   "Kami adalah tim pengembangan anak muda berbakat yang menyediakan layanan pembuatan aplikasi android dan ios di Surabaya dan seluruh Indonesia.";
 
-export default function MainPage(props: PageProps) {
+export default function MobilePage(props: PageProps) {
   const ogImageUrl = new URL(asset("/home-og.png"), props.url).href;
   const origin = `${props.url.protocol}//${props.url.host}`;
 
