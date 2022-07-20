@@ -101,38 +101,40 @@ function Intro() {
         />
       </picture>
 
-      <h2 class={title}>The next-gen web framework.</h2>
+      <h2 class={title}>Kenapa memilih kami?</h2>
 
       <p class={tw`text-gray-600`}>
-        Fresh is a next generation web framework, built for speed, reliability,
-        and simplicity. Some stand out features:
+        Kami menggunakan teknologi terbaru untuk membangun aplikasi android dan
+        ios anda, berikut merupakan beberapa keunggulan yang kami tawarkan:
       </p>
 
       <div>
         <ListItem>
-          <b>Just-in-time rendering</b> on the edge.
+          <b>Flutter</b> framework frontend multi platform dari google
         </ListItem>
         <ListItem>
-          <b>Island based client hydration</b> for maximum interactivity.
+          <b>Laravel/ExpressJS/Gofiber</b> sebagai backend yang bebas anda pilih
         </ListItem>
         <ListItem>
-          <b>Zero runtime overhead</b>: no JS is shipped to the client by
-          default.
+          <b>Clean Architecture</b> yang membuat mudah untuk dimaintenance
         </ListItem>
         <ListItem>
-          <b>No build step</b>.
+          <b>Berpengalaman</b> dalam membuat aplikasi cross platform
         </ListItem>
         <ListItem>
-          <b>No configuration</b> necessary.
+          <b>Progress tiap minggu</b> untuk mereview masa pengembangan
         </ListItem>
         <ListItem>
-          <b>TypeScript support</b> out of the box.
+          <b>Termurah</b> karena kami punya efiensi team yang tinggi
+        </ListItem>
+        <ListItem>
+          <b>Garansi</b> maintenance untuk bug
         </ListItem>
       </div>
 
       <p class={tw`text-gray-600`}>
-        Fresh embraces the tried and true design of server side rendering and
-        progressive enhancement on the client side.
+        kami percaya bahwa kepercayaan pelangan adalah yang utama, maka kami
+        berusaha semaksimal mungkin menghadirkan aplikasi dengan kualitas tinggi
       </p>
     </section>
   );
@@ -145,46 +147,17 @@ function GettingStarted(props: { origin: string }) {
     >
       <h2 id="getting-started" class={tw`text(xl gray-600) font-bold`}>
         <a href="#getting-started" class={tw`hover:underline`}>
-          Getting started
+          Hubungi kami sekarang
         </a>
       </h2>
       <p class={tw`text-gray-600`}>
-        To get started, make sure you have the{" "}
-        <a href="https://deno.land" class={tw`text-blue-600 hover:underline`}>
-          Deno CLI
-        </a>{" "}
-        version 1.23.0 or higher installed.
+        Untuk mendiskusikan aplikasi anda, silahkan hubungi kami melalui
       </p>
-      <p class={tw`text-gray-600`}>
-        Then you can use the Fresh init script to bootstrap a new project:
-      </p>
-      <pre class={tw`overflow-x-auto py-2 px-4 bg(gray-100)`}>
-        {`deno run -A -r ${props.origin} my-project`}
-      </pre>
-      <p class={tw`text-gray-600`}>
-        Enter the newly created project directory and run the following command
-        to start the development server:
-      </p>
-      <pre class={tw`overflow-x-auto py-2 px-4 bg(gray-100)`}>
-        deno task start
-      </pre>
-      <p class={tw`text-gray-600`}>
-        You can now open{" "}
-        <a
-          href="http://localhost:8000"
-          class={tw`text-blue-600 hover:underline`}
-        >
-          http://localhost:8000
-        </a>{" "}
-        in your browser to view the page.
-      </p>
-      <p class={tw`text-gray-600`}>
-        A more in-depth getting started guide is available in{" "}
-        <a href="/docs" class={tw`text-blue-600 hover:underline`}>
-          the docs
+      <div class={nav}>
+        <a href="https://wa.me/6285704703691" class={a}>
+          Hubungi kami
         </a>
-        .
-      </p>
+      </div>
     </section>
   );
 }
