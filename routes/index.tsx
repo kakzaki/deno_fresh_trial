@@ -1,13 +1,15 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import { Head } from "$fresh/runtime.ts";
+import { asset, Head } from "$fresh/runtime.ts";
 import { SocialLinks } from "../components/SocialLinks.tsx";
 import { Footer } from "../components/Footer.tsx";
+import { Handlers, PageProps } from "$fresh/server.ts";
 
-export default function Home() {
+export default function Home({ data, ...props }: PageProps<null>) {
   const linkClass = tw`text-blue(600 hover:500) hover:underline transition duration-75 ease-in-out`;
-
+  const ogImageUrl = new URL(asset("/me.webp"), props.url).href;
+  const origin = `${props.url.protocol}//${props.url.host}`;
   return (
     <div>
       <div class={tw`mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}>
@@ -23,8 +25,8 @@ export default function Home() {
             content="Senior Flutter Developer. @dorandev core team. 🌍"
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://kakzaki.deno.dev" />
-          <meta property="og:image" content="/me.webp" />
+          <meta property="og:url" content={props.url.href} />
+          <meta property="og:image" content={ogImageUrl} />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         </Head>
         <div class={tw`flex flex(col sm:row) gap-8`}>

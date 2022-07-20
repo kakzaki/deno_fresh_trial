@@ -27,7 +27,7 @@ const DESCRIPTION =
   "Kami adalah tim pengembangan anak muda berbakat yang menyediakan layanan pembuatan aplikasi android dan ios di Surabaya dan seluruh Indonesia.";
 
 export default function MobilePage(props: PageProps) {
-  const ogImageUrl = new URL(asset("/home-og.png"), props.url).href;
+  const ogImageUrl = new URL(asset("/lemon-squash.svg"), props.url).href;
   const origin = `${props.url.protocol}//${props.url.host}`;
 
   return (
@@ -54,8 +54,8 @@ export default function MobilePage(props: PageProps) {
 }
 
 function Hero() {
-  const container = tw`w-full flex justify-center items-center flex-col bg-green-300`;
-  const nav = tw`flex justify-end items-center bg-green-300`;
+  const container = tw`w-full flex justify-center items-center flex-col bg-red-900`;
+  const nav = tw`flex justify-end items-center bg-red-900`;
   const a = tw`border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white`;
 
   return (
@@ -93,11 +93,11 @@ function Intro() {
     >
       <picture>
         <img
-          src="/lemon-squash.svg"
+          src="/android-chrome-192x192.png"
           class={tw`w-64 mx-auto`}
-          width={800}
-          height={678}
-          alt="deno is drinking fresh lemon squash"
+          width={192}
+          height={192}
+          alt="logo of kakzaki.dev"
         />
       </picture>
 
@@ -155,7 +155,7 @@ function GettingStarted(props: { origin: string }) {
       >
         <a
           href="https://wa.me/6285704703691"
-          class={tw`border(2 black) inline-flex items-center h-8 p-8 m-8 text-black bg-green-300 font-bold rounded hover:bg-green-600`}
+          class={tw`border(2 black) inline-flex items-center h-8 p-8 m-8 text-black bg-red-900 font-bold rounded hover:red-600`}
         >
           Hubungi kami
         </a>
