@@ -141,6 +141,8 @@ function Intro() {
 }
 
 function GettingStarted(props: { origin: string }) {
+  const nav = tw`flex justify-end items-center bg-green-300`;
+  const a = tw`border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white`;
   return (
     <section
       class={tw`max-w-screen-sm mx-auto my-16 px(4 sm:6 md:8) space-y-4`}
