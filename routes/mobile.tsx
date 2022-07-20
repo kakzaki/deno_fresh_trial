@@ -22,9 +22,9 @@ export const handler: Handlers = {
   },
 };
 
-const TITLE = "Agensi aplikasi android dan ios Surabaya";
+const TITLE = "Agensi aplikasi android, ios dan desktop Surabaya";
 const DESCRIPTION =
-  "Kami adalah tim pengembangan anak muda berbakat yang menyediakan layanan pembuatan aplikasi android dan ios di Surabaya dan seluruh Indonesia.";
+  "Kami adalah tim pengembangan anak muda berbakat yang menyediakan layanan pembuatan aplikasi android, ios dan desktop di Surabaya dan seluruh Indonesia.";
 
 export default function MobilePage(props: PageProps) {
   const ogImageUrl = new URL(asset("/android-chrome-192x192.png"), props.url)
@@ -58,6 +58,7 @@ function Hero() {
   const container = tw`w-full flex justify-center items-center flex-col bg-red-900`;
   const nav = tw`flex justify-end items-center bg-red-900`;
   const a = tw`border(1 white) inline-flex items-center h-10 px-4 m-4 text-white bg-transparent rounded hover:bg-red-600`;
+  const title = tw`py-4 text(4xl sm:4xl lg:4xl white center) sm:tracking-tight font-extrabold my-20 mx-6`;
 
   return (
     <Fragment>
@@ -67,6 +68,10 @@ function Hero() {
         </a>
       </div>
       <section class={container}>
+        <h2 class={title}>
+          Solusi pembuatan aplikasi android, ios, dan desktop anda
+        </h2>
+        <div class={tw`pb-12 flex-1`}></div>
         <LemonDrop />
       </section>
     </Fragment>
@@ -95,7 +100,7 @@ function Intro() {
       <picture>
         <img
           src="/android-chrome-192x192.png"
-          class={tw`w-64 mx-auto`}
+          class={tw`w-30 mx-auto`}
           width={192}
           height={192}
           alt="logo of kakzaki.dev"
@@ -105,8 +110,9 @@ function Intro() {
       <h2 class={title}>Kenapa memilih kami?</h2>
 
       <p class={tw`text-gray-600`}>
-        Kami menggunakan teknologi terbaru untuk membangun aplikasi android dan
-        ios anda, berikut merupakan beberapa keunggulan yang kami tawarkan:
+        Kami menggunakan teknologi terbaru untuk membangun aplikasi android, ios
+        dan desktop anda, berikut merupakan beberapa keunggulan yang kami
+        tawarkan:
       </p>
 
       <div>
