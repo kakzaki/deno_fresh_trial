@@ -141,18 +141,18 @@ function Intro() {
 }
 
 function GettingStarted(props: { origin: string }) {
-  const nav = tw`flex justify-end items-center bg-green-300`;
-  const a = tw`border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white`;
+  const nav = tw`flex items-center`;
+  const a = tw`border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-green-300 rounded hover:bg-green-600`;
   return (
     <section
       class={tw`max-w-screen-sm mx-auto my-16 px(4 sm:6 md:8) space-y-4`}
     >
-      <h2 id="getting-started" class={tw`text(xl gray-600) font-bold`}>
+      <h2 id="getting-started" class={tw`text(xl gray-600) font-bold center`}>
         <a href="#getting-started" class={tw`hover:underline`}>
           Hubungi kami sekarang
         </a>
       </h2>
-      <p class={tw`text-gray-600`}>
+      <p class={tw`text-gray-600 center`}>
         Untuk mendiskusikan aplikasi anda, silahkan hubungi kami melalui
       </p>
       <div class={nav}>
