@@ -19,7 +19,7 @@ export function Posts({ posts }: IndexProps) {
   );
 
   return (
-    <div class={tw`md:mx-auto w(md:2/3)`}>
+    <div>
       {postIndex.map((post) => (
         <PostCard post={post} key={post.pathname} />
       ))}

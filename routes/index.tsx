@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div>
-      <div class={tw`-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}>
+      <div class={tw`mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}>
         <Head>
           <title>Zaki Mubarok</title>
           <meta
