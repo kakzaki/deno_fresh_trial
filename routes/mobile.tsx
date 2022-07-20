@@ -145,17 +145,17 @@ function GettingStarted(props: { origin: string }) {
     <section
       class={tw`max-w-screen-sm mx-auto my-16 px(4 sm:6 md:8) space-y-4`}
     >
-      <h2
-        class={tw`py-4 text(4xl sm:4xl lg:4xl gray-900 center) sm:tracking-tight font-extrabold`}
+      <h3
+        class={tw`py-1 text(2xl sm:2xl lg:2xl gray-900 center) sm:tracking-tight font-bold`}
       >
-        Hubungi kami sekarang
-      </h2>
+        Diskusikan ide anda, kami siap membantu
+      </h3>
       <div
-        class={tw`py-4 text(4xl sm:4xl lg:4xl gray-900 center) sm:tracking-tight`}
+        class={tw` text(2xl sm:2xl lg:2xl gray-900 center) sm:tracking-tight`}
       >
         <a
           href="https://wa.me/6285704703691"
-          class={tw`border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-green-300 rounded hover:bg-green-600`}
+          class={tw`border(2 black) inline-flex items-center h-8 p-8 m-8 text-black bg-green-300 font-bold rounded hover:bg-green-600`}
         >
           Hubungi kami
         </a>
