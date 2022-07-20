@@ -57,7 +57,7 @@ export default function MobilePage(props: PageProps) {
 function Hero() {
   const container = tw`w-full flex justify-center items-center flex-col bg-red-900`;
   const nav = tw`flex justify-end items-center bg-red-900`;
-  const a = tw`border(1 red-900) inline-flex items-center h-10 px-4 m-4 text-white bg-transparent rounded hover:bg-red-600`;
+  const a = tw`border(1 white) inline-flex items-center h-10 px-4 m-4 text-white bg-transparent rounded hover:bg-red-600`;
 
   return (
     <Fragment>
@@ -156,7 +156,7 @@ function GettingStarted(props: { origin: string }) {
       >
         <a
           href="https://wa.me/6285704703691"
-          class={tw`border(2 black) inline-flex items-center h-8 p-8 m-8 text-white bg-red-900 font-bold rounded hover:bg-red-600`}
+          class={tw`border(2 white) inline-flex items-center h-8 p-8 m-8 text-white bg-red-900 font-bold rounded hover:bg-red-600`}
         >
           Hubungi kami
         </a>
