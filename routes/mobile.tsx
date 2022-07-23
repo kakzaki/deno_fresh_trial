@@ -42,7 +42,7 @@ export default function MobilePage(props: PageProps) {
         <meta property="og:url" content={props.url.href} />
         <meta property="og:image" content={ogImageUrl} />
       </Head>
-      <div class={tw`flex flex-col min-h-screen`}>
+      <div class={tw`font-valera_round flex flex-col min-h-screen`}>
         <Hero />
         <div class={tw`flex-1`}>
           <Intro />
