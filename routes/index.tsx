@@ -12,7 +12,9 @@ export default function Home({ data, ...props }: PageProps<null>) {
   const origin = `${props.url.protocol}//${props.url.host}`;
   return (
     <div>
-      <div class={tw`mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}>
+      <div
+        class={tw`font-valera_round mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}
+      >
         <Head>
           <title>Zaki Mubarok</title>
           <meta
