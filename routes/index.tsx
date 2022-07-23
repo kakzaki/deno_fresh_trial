@@ -30,10 +30,7 @@ export default function Home({ data, ...props }: PageProps<null>) {
           <meta property="og:url" content={props.url.href} />
           <meta property="og:image" content={ogImageUrl} />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-          <link
-            rel="stylesheet"
-            href="/fonts/w8gdH283Tvk__Lua32TysjIfp8uP.woff2"
-          />
+
         </Head>
         <div class={tw`flex flex(col sm:row) gap-8`}>
           <img
