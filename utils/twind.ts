@@ -1,18 +1,16 @@
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { Configuration, setup } from "twind";
-
+//@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 
 export * from "twind";
-
-
 
 export const config: Configuration = {
   darkMode: "class",
   mode: "silent",
   theme: {
     fontFamily: {
-       poppins: ["Poppins"],
-     // valera_round: ["Varela Round"],
+      //poppins: ["Poppins"],
+      valera_round: ["Valera Round"],
     },
     extend: {
       colors: {
@@ -35,18 +33,12 @@ export const config: Configuration = {
     },
   },
   preflight: {
-    '@font-face': [
+    "@font-face": [
       {
-        fontFamily: 'Poppins',
-        fontWeight: '400',
-        src: 'url(/https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff")',
+        fontFamily: "Valera Round",
+        src: 'url(/fonts/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format("woff")',
       },
-      {
-        fontFamily: 'Poppins',
-        fontWeight: '500',
-        src: 'url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff")',
-      },
-    ]
+    ],
   },
 };
 if (IS_BROWSER) setup(config);
