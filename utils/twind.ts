@@ -1,14 +1,18 @@
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { Configuration, setup } from "twind";
+
+
 export * from "twind";
+
+
 
 export const config: Configuration = {
   darkMode: "class",
   mode: "silent",
   theme: {
     fontFamily: {
-      // poppins: ["Poppins"],
-      valera_round: ["Varela Round"],
+       poppins: ["Poppins"],
+     // valera_round: ["Varela Round"],
     },
     extend: {
       colors: {
@@ -29,6 +33,20 @@ export const config: Configuration = {
         "desktop-pattern": "url('/background/bg-intro-desktop.png')",
       },
     },
+  },
+  preflight: {
+    '@font-face': [
+      {
+        fontFamily: 'Poppins',
+        fontWeight: '400',
+        src: 'url(/https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff")',
+      },
+      {
+        fontFamily: 'Poppins',
+        fontWeight: '500',
+        src: 'url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format("woff")',
+      },
+    ]
   },
 };
 if (IS_BROWSER) setup(config);
