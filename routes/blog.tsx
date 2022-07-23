@@ -23,7 +23,9 @@ export const handler: Handlers<null> = {
 export default function BlogPage({ data, ...props }: PageProps<null>) {
   return (
     <div>
-      <div class={tw`mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}>
+      <div
+        class={tw`font-valera_round mx-auto max-w-screen-sm px(4 sm:6 md:8) my(12 sm:20)`}
+      >
         <Head>
           <title>Zaki Mubarok's Blog</title>
           <meta

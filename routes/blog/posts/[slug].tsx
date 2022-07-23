@@ -43,7 +43,7 @@ export default function PostPage({ data, ...props }: PageProps<Post | null>) {
 
   return (
     <div>
-      <div class={tw`my(16 sm:20)`}>
+      <div class={tw`font-valera_round my(16 sm:20)`}>
         <div
           class={tw`${tw(
             markdownStyles
