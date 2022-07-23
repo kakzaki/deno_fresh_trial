@@ -7,7 +7,8 @@ export const config: Configuration = {
   mode: "silent",
   theme: {
     fontFamily: {
-      poppins: ["Poppins"],
+      // poppins: ["Poppins"],
+      valera_round: ["Varela Round"],
     },
     extend: {
       colors: {
